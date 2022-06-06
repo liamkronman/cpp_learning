@@ -18,10 +18,10 @@ double calculateHeight(double initialHeight, int xSecs)
 
 void printHeight(double initialHeight, int xSecs)
 {
-    const double height = calculateHeight(initialHeight, xSecs);
+    const double currHeight = calculateHeight(initialHeight, xSecs);
     
-    if (height > 0)
-        std::cout << "At " << xSecs << " seconds, the ball is at height: " << height << " meters\n";
+    if (currHeight > 0)
+        std::cout << "At " << xSecs << " seconds, the ball is at height: " << currHeight << " meters\n";
     else
         std::cout << "At " << xSecs << " seconds, the ball is on the ground.\n";
 }
